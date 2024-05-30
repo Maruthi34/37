@@ -1,0 +1,291 @@
+Centered Content
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example 3</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .item {
+            padding: 20px;
+            background-color: #32cd32;
+            color: white;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Centered Item</div>
+    </div>
+</body>
+</html>
+
+Space Between
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example 4</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            padding: 20px;
+            background-color: #ff69b4;
+            color: white;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+
+
+Flex Wrap
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example 5</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            padding: 20px;
+            background-color: #9370db;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            flex: 1 1 calc(33.333% - 20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+</html>
+
+
+Flex Grow
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example 6</title>
+    <style>
+        .container {
+            display: flex;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            padding: 20px;
+            background-color: #ffa500;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+
+
+Nested Flexbox
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example 7</title>
+    <style>
+        .outer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .inner-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #00bfff;
+        }
+        .item {
+            padding: 20px;
+            background-color: #ff4500;
+            color: white;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+Align Items Stretch
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example 8</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: stretch;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            padding: 20px;
+            background-color: #ff1493;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+
+
+Flex Basis
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example 9</title>
+    <style>
+        .container {
+            display: flex;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            padding: 20px;
+            background-color: #daa520;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+
+
+ Responsive Layout
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example 10</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .item {
+            padding: 20px;
+            background-color: #4682b4;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            flex: 1 1 calc(50% - 20px);
+        }
+        @media (max-width: 600px) {
+            .item {
+                flex: 1 1 calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>
+
+
